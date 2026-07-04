@@ -1,14 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="landing.css"/>
-        <title>PS3 Super Slim</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trailer &mdash; PS3 Super Slim</title>
+    <meta name="description" content="Assista ao trailer de lançamento do Playstation 3 Super Slim.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="landing.css">
 </head>
 <body>
-        <div id="landing"> 
-                <video id="trailer" src="Videos/PS3superslim.mp4" controls></video>
+
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top ps-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">PS<span>3</span></a>
+            <a href="index.html" class="ps-btn-ghost d-none d-sm-inline-flex">
+                <i class="bi bi-arrow-left" aria-hidden="true"></i> Voltar
+            </a>
         </div>
+    </nav>
+
+    <!-- ===== TRAILER ===== -->
+    <main class="ps-video-page">
+        <div class="container">
+            <a href="index.html" class="ps-back-link d-sm-none">
+                <i class="bi bi-arrow-left" aria-hidden="true"></i> Voltar para a página inicial
+            </a>
+
+            <p class="ps-eyebrow text-center">Novo modelo</p>
+            <h1 class="ps-section-title mb-2">PS3 Super Slim</h1>
+            <p class="ps-section-sub">Confira o trailer de lançamento do modelo mais compacto da linha Playstation 3.</p>
+
+            <div class="ps-video-frame mx-auto" style="max-width: 900px;">
+                <video id="trailer" src="Videos/PS3superslim.mp4" controls preload="metadata">
+                    Seu navegador não suporta a reprodução deste vídeo.
+                </video>
+            </div>
+        </div>
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="ps-footer">
+        <div class="container">
+            Página feita por fãs &middot; Playstation 3 &copy; Sony Interactive Entertainment
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
